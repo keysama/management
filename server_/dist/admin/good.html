@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品管理</title>
+	<style type="text/css">
+		table{
+			border:1px solid #000;
+		}
+		table td,table th{
+			border:1px solid #000;
+			padding:10px 40px;
+		}
+	</style>
+</head>
+<body>
+	<h1>商品管理</h1>
+	<a href="/admin/admin">首页</a>
+	<table>
+		<tr>
+			<th>id</th>
+			<th>标题</th>
+			<th>封面</th>
+			<th>截图</th>
+			<th>内容</th>
+			<th>价格</th>
+			<th>分类</th>
+			<th>操作</th>
+		</tr>
+		<% for(let i=0;i<good.length;i++){%>
+		<tr>
+			<td><%=good[i].id%></td>
+			<td><%=good[i].title%></td>
+			<td>
+				<img src="<%=coverUrl.split('static')[1]+good[i].cover%>" style="width:50px;">
+			</td>
+			<td>
+				<% for(let r=0;r<good[i].cut.length;r++){%>
+				<img src="<%=cutUrl.split('static')[1]+good[i].cut[r].cut%>" style="width: 50px;">
+				<%}%>
+			</td>
+			<td>
+				<% for(let r=0;r<good[i].content.length;r++){%>
+				<img src="<%=contentUrl.split('static')[1]+good[i].content[r].img%>" style="width: 50px;">
+				<%}%>
+			</td>
+			<td><%=good[i].price%></td>
+			<td><%=good[i].name%></td>
+			<td>
+				<a>修改</a>
+				<a href="/admin/good/delete?id=<%=good[i].id%>">删除</a>
+			</td>
+		</tr>
+		<%}%>
+	</table>
+	<a href="/admin/good/add">添加</a>
+</body>
+</html>

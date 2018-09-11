@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>添加商品</title>
+</head>
+<body>
+	<h1>添加商品</h1>
+	<a href="/admin/admin">首页</a>
+	<form method="post" action="/admin/good/add" enctype ="multipart/form-data">
+		<div>
+			商品名：<input type="text" name="title" placeholder="商品名">
+		</div>
+		<div>
+			分类：
+			<select name="kind">
+				<% for(let i=0;i<kind.length;i++){%>
+					<option value="<%=kind[i].id%>"><%= kind[i].name%></option>
+				<%}%>
+			</select>
+		</div>
+		<div>
+			封面：<input type="file" name="cover">
+		</div>
+		<div id="cut">
+			<span class="addd" style="color:red">添加截图</span>
+			截图：<input type="file" name="cut">
+		</div>
+		<div>
+			价格：<input type="number" name="price">
+		</div>
+		<div id="content">
+			<span class="add" style="color:red">添加描述</span>
+			描述：<input type="file" name="content">
+			
+		</div>
+		<div>
+			<input type="submit" value="添加">
+		</div>
+		
+	</form>
+<script type="text/javascript">
+var add=document.getElementsByClassName('add');
+add[0].onclick=function(){
+	var input = document.createElement("input"); 
+	input.type = 'file'; 
+	input.name = 'content'; 
+	var div=document.createElement("div");
+	div.appendChild(input); 
+	document.getElementById('content').appendChild(div)
+}
+var cutadd=document.getElementsByClassName('addd');
+cutadd[0].onclick=function(){
+	var input = document.createElement("input"); 
+	input.type = 'file'; 
+	input.name = 'cut'; 
+	var div=document.createElement("div");
+	div.appendChild(input); 
+	document.getElementById('cut').appendChild(div)
+}
+</script>
+</body>
+</html>

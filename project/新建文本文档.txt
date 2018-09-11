@@ -1,0 +1,184 @@
+          <!-- ------铝型材--------- -->
+          <div class="col-md-6" v-show="parseInt(order_edit.type)==0">
+            <h4>铝型材信息</h4>
+              <div class="form-group">
+                  <label class="mulit">名称</label>
+                  <input type="text" class="form-control" v-model="order_edit.specifications">
+              </div>
+              <div class="form-group">
+                  <label class="mulit">型材代号</label>
+                  <input type="text" class="form-control" v-model="order_edit.specifications">
+              </div>
+              <div class="form-group">
+                  <label >材质:</label>
+                  <input type="text" class="form-control" v-model="order_edit.specifications">
+              </div>
+              <div class="form-group">
+                  <label class="mulit">表面喷涂处理:</label>
+                  <input type="text" class="form-control" v-model="order_edit.specifications">
+              </div>
+              <div class="form-group">
+                  <label class="mulit">喷涂色号:</label>
+                  <input type="text" class="form-control" v-model="order_edit.specifications">
+              </div>
+              <div class="form-group">
+                  <label class="mulit">长度(m):</label>
+                  <input type="number" class="form-control" v-model="order_edit.specifications">
+              </div>
+              <div class="form-group">
+                  <label class="mulit">数量(支):</label>
+                  <input type="number" class="form-control" v-model="order_edit.specifications">
+              </div>
+              <div class="form-group">
+                  <label >线密度:</label>
+                  <input type="number" class="form-control" v-model="order_edit.specifications">
+              </div>
+              <div class="form-group">
+                  <label class="mulit">每支重量:</label>
+                  <input type="number" class="form-control" v-model="order_edit.specifications">
+              </div>
+              <div class="form-group">
+                  <label>备注</label>
+                  <input type="text" class="form-control" v-model="order_edit.specifications">
+              </div>
+          </div>
+          <!-- ------钢型材--------- -->
+          <div class="col-md-6" v-show="parseInt(order_edit.type)==1">
+            <h4>钢型材信息</h4>
+            <div class="form-group">
+                  <label class="mulit">名称</label>
+                  <input type="text" class="form-control" >
+              </div>
+              <div class="form-group">
+                  <label >规格:</label>
+                  <input type="text" class="form-control" >
+              </div>
+              <div class="form-group">
+                  <label class="mulit">材质:</label>
+                  <input type="text" class="form-control" >
+              </div>
+              <div class="form-group">
+                  <label class="mulit">表面处理方式:</label>
+                  <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                  <label class="mulit">长度(m):</label>
+                  <input type="number" class="form-control">
+              </div>
+              <div class="form-group">
+                  <label class="mulit">数量(支):</label>
+                  <input type="number" class="form-control">
+              </div>
+              <div class="form-group">
+                  <label class="mulit">线密度(kg/m):</label>
+                  <input type="text" class="form-control" >
+              </div>
+              <div class="form-group">
+                  <label>备注</label>
+                  <input type="text" class="form-control">
+              </div>
+          </div>
+          <!-- ------板材--------- -->
+          <div class="col-md-6" v-show="parseInt(order_edit.type)==2">
+            <h4>板材信息</h4>
+            <div class="form-group">
+                <label class="mulit">名称</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label >编号前缀:</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="mulit">编号:</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="mulit">宽度W(mm):</label>
+              <input type="number" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="mulit">高度H(mm):</label>
+                <input type="number" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="mulit">数量(片)</label>
+                <input type="number" class="form-control" >
+            </div>
+            <div class="form-group">
+                <label class="mulit">单件面积(㎡):</label>
+                <input type="number" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="mulit">加工图编号:</label>
+                <input type="text" class="form-control" >
+            </div>
+            <div class="form-group">
+                <label>备注</label>
+                <input type="text" class="form-control" >
+            </div>
+          </div>
+          <!-- ------钢加工件--------- -->
+          <div class="col-md-6" v-show="parseInt(order_edit.type)==3">
+            <h4>钢加工件信息</h4>
+            <div class="form-group">
+                <label class="mulit">名称</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label >编号:</label>
+                <input type="text" class="form-control" >
+            </div>
+            <div class="form-group">
+                <label >表面处理方式:</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="mulit">件数:</label>
+                <input type="number" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="mulit">单件重量:</label>
+                <input type="number" class="form-control" >
+            </div>
+            <div class="form-group">
+                <label class="mulit">加工图编号:</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>备注</label>
+                <input type="text" class="form-control">
+            </div>
+          </div>
+          <!-- ------辅助材料--------- -->
+          <div class="col-md-6" v-show="parseInt(order_edit.type)==4">
+            <h4>辅助材料信息</h4>
+            <div class="form-group">
+                <label class="mulit">名称</label>
+                <input type="text" class="form-control" >
+            </div>
+            <div class="form-group">
+                <label >规格:</label>
+                <input type="text" class="form-control" >
+            </div>
+            <div class="form-group">
+                <label >材质:</label>F
+                <input type="text" class="form-control" >
+            </div>
+            <div class="form-group">
+                <label class="mulit">单位:</label>
+                <input type="text" class="form-control"  >
+            </div>
+            <div class="form-group">
+                <label class="mulit">数量:</label>
+              <input type="number" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>品牌:</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>备注</label>
+                <input type="text" class="form-control" >
+            </div>
+          </div>

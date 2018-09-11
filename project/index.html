@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>幕墙提料管理系统</title>
+    <link rel="stylesheet" type="text/css" href="./static/iconfont.css">
+    <!-- --file-input--- -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.9/css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css">
+    <!-- ------ -->
+    <style>
+      .krajee-default.file-preview-frame{
+        width:45%;
+        overflow: hidden;
+      }
+      .krajee-default.file-preview-frame .kv-file-content{
+        width: 100%;
+      }
+      .krajee-default.file-preview-frame .kv-file-content .file-object{
+        width: 100% !important;
+      }
+      .krajee-default .file-caption-info, .krajee-default .file-size-info{
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 160px;
+        height: unset !important;
+        margin: auto;
+      }
+      @media screen and (max-width:768px){
+        .krajee-default.file-preview-frame{
+          width:80%;
+          overflow: hidden;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <router-view></router-view>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.9/js/plugins/piexif.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.9/js/plugins/sortable.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.9/js/plugins/purify.min.js"  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.9/js/fileinput.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.9/themes/fa/theme.js" type="text/javascript"></script>
+  <script src="./static/xlsx.full.min.js" type="text/javascript"></script>
+</html>

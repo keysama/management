@@ -1,0 +1,19 @@
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.flex-center{
+    justify-content: space-between;
+}
+.pointer{
+    cursor: pointer;
+}
+.pointer-default{
+    cursor: default;
+}
+.mulit::before{
+    content: '*';
+    color:rgb(170, 0, 0);
+}

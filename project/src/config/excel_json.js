@@ -1,0 +1,55 @@
+export const lv={
+    __EMPTY:'',
+    __EMPTY_1:'name',
+    __EMPTY_2:'code',
+    __EMPTY_3:'quality',
+    __EMPTY_4:'dispose',
+    __EMPTY_5:'color',
+    __EMPTY_6:'length',
+    __EMPTY_7:'num',
+    __EMPTY_8:'rou',
+    __EMPTY_11:'remark',
+}
+export const gang={
+    __EMPTY:'',
+    __EMPTY_1:'name',
+    __EMPTY_2:'standard',
+    __EMPTY_3:'quality',
+    __EMPTY_4:'dispose',
+    __EMPTY_5:'length',
+    __EMPTY_6:'num',
+    __EMPTY_7:'rou',
+    __EMPTY_10:'remark',
+}
+export const ban={
+    __EMPTY:'',
+    __EMPTY_1:'name',
+    __EMPTY_2:'codehead',
+    __EMPTY_3:'code',
+    __EMPTY_4:'width',
+    __EMPTY_5:'height',
+    __EMPTY_6:'num',
+    __EMPTY_7:'acreage',
+    __EMPTY_9:'number',
+    __EMPTY_10:'remark',
+}
+export const jian={
+    __EMPTY:'',
+    __EMPTY_1:'name',
+    __EMPTY_2:'code',
+    __EMPTY_3:'dispose',
+    __EMPTY_4:'num',
+    __EMPTY_5:'weight',
+    __EMPTY_7:'number',
+    __EMPTY_8:'remark',
+}
+export const fu={
+    __EMPTY:'',
+    __EMPTY_1:'name',
+    __EMPTY_2:'standard',
+    __EMPTY_3:'quality',
+    __EMPTY_4:'unit',
+    __EMPTY_5:'num',
+    __EMPTY_6:'brand',
+    __EMPTY_7:'remark',
+}
